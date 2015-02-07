@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Spencer's Word Scrambler",
+	"version": "1.0",
+	"description": "Replaces various words with other words.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
